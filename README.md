@@ -1,2 +1,2 @@
-# Prog_club_portal
-Portal
+# portal
+portal for programming club
