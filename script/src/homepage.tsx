@@ -6,7 +6,6 @@ import SimpleIconRow from './icons'
 
 
 
-
 export default function Homepage() {
 
   return (
