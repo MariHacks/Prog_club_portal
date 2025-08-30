@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 .icon-row-container {
   position: relative;
@@ -7,8 +7,8 @@
 
 .icon-row {
   display: flex;
-  gap: 1.5rem;
-  padding: 1rem 0;
+  gap: 2rem;
+  padding: 3rem;
   overflow-x: auto;
   scrollbar-width: none;
 }
