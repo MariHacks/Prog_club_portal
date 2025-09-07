@@ -8,7 +8,7 @@
 .icon-row {
   display: flex;
   gap: 2rem;
-  padding: 3rem;
+  padding: 1.5rem;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -52,7 +52,9 @@
   border-radius: 1rem;
   padding: 2rem;
   max-width: 90%;
-  width: 400px;
+  width: 80%;
+  height: auto;
+  overflow-y: auto;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
@@ -65,6 +67,7 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color:black;
 }
 
 .modal-body {
@@ -99,4 +102,94 @@
 
 .modal-action-button:hover {
   background: #4338ca;
+}
+
+.list_item{
+  text-align: left;
+  margin: 1.5rem 0;
+}
+.list_ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list_link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  color: #2563eb;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e7eb;
+  gap: 1rem;
+}
+.list_link:hover{
+  background-color: #2563eb;
+  color: white;
+  transform: translateX(4px);
+}
+.list{
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #444a57;
+  padding-top: 1.5rem;
+}
+.project_name{
+  flex: 1;
+  text-align: left;
+}
+.project_teacher{
+  flex: 1;
+  text-align: center;
+  color: inherit;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.project_status{
+  flex: 1;
+  text-align: right;
+  color: inherit;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.project_status[data-status="Incomplete"] {
+  background-color: #c52121;
+  color: #ffffff;
+}
+.project_status[data-status="In Progress"] {
+  background-color: #e0b31f;
+  color: #ffffff;
+}
+.project_status[data-status="Complete"] {
+  background-color: #00ff4c;
+  color: #ffffff;
+}
+.headers {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 2.5rem 0.5rem 1rem;
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.name_header {
+  flex: 1;
+  text-align: left;
+}
+
+.teacher_header {
+  flex: 1;
+  text-align: center;
+}
+
+.status_header {
+  flex: 1;
+  text-align: right;
 }
