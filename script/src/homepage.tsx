@@ -2,7 +2,7 @@
 // import React, { useEffect, useRef } from "react";
 import FeaturedCarousel from './featured_carousel'
 import SimpleIconRow from './icons'
-
+import DescriptionBlocks from './desc';
 
 
 
@@ -37,16 +37,19 @@ export default function Homepage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        
 
         <section className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Featured</h2>
+            <h2 className="text-xl font-semibold mb-4">Featured Topics</h2>
             <FeaturedCarousel />
 
         </section>
 
+        <section className="mt-8">
+            <DescriptionBlocks />
+        </section>
+
         <section id="games" className="mt-8">
-              <h2 className="text-xl font-semibold mb-4">Featured</h2>
+              <h2 className="text-xl font-semibold mb-4">Project Topics</h2>
               <SimpleIconRow />
 
         </section>
@@ -57,7 +60,7 @@ export default function Homepage() {
             <h3 className="text-lg font-semibold">Want to publish your own challenge? Click on the button below!</h3>
           </div>
           <div>
-            <button className="px-4 py-2 rounded bg-indigo-600 text-white">Create a challenge</button>
+            <button className="px-4 py-2 rounded bg-indigo-600 text-white"><a href="#challenge">Create a challenge</a></button>
           </div>
         </section>
 
